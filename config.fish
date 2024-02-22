@@ -3,10 +3,10 @@ if status is-interactive
     set fish_greeting
 
     # automaticaly start tmux
-    if status is-interactive
-    and not set -q TMUX
-        exec tmux
-    end
+#   if status is-interactive
+#   and not set -q TMUX
+#       exec tmux
+#   end
 #   #theme
 #   fish_config theme save "Catppuccin Mocha"
 
@@ -17,5 +17,8 @@ if status is-interactive
     alias nv="nvim"
     alias cr="clear"
     alias lg="lazygit"
-
+    alias btop="bpytop"
+    
+    #zoxide integration
+    zoxide init --cmd cd fish | source
 end
