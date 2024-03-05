@@ -1,13 +1,15 @@
 if status is-interactive
     # Supresses fish's intro message
     set fish_greeting
+       fortune | cowsay -f kitty | lolcat
 
     # automaticaly start tmux
 #   if status is-interactive
 #   and not set -q TMUX
 #       exec tmux
 #   end
-#   #theme
+
+   #theme
 #   fish_config theme save "Catppuccin Mocha"
 
     # aliases
