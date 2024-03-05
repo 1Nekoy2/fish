@@ -1,5 +1,5 @@
 if status is-interactive
-    # Supresses fish's intro message
+    # Supresses fish's intro message and start something cool :3
     set fish_greeting
        fortune | cowsay -f kitty | lolcat
 
@@ -20,6 +20,7 @@ if status is-interactive
     alias cr="clear"
     alias lg="lazygit"
     alias btop="bpytop"
+    alias nf="neofetch | lolcat"
     
     #zoxide integration
     zoxide init --cmd cd fish | source
